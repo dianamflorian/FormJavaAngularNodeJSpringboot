@@ -1,24 +1,24 @@
--------------------------------------------------------------------------------------------------------------------------------------------
+
 
 # FORMULARIO ANGULAR, JAVA, NODE, SPRINGBOOT, TOMCAT
 
 El sistema cuenta con una arquitectura separada en capas:
 
-- 🖥️ **Frontend Angular** (solo envía los datos por POST).
-- 🛠️ **Backend Java Spring Boot**, que expone un endpoint `/api/usuarios`.
-- 🗄️ **Base de datos H2** en memoria, que guarda los datos enviados.
+-  **Frontend Angular** (solo envía los datos por POST).
+-  **Backend Java Spring Boot**, que expone un endpoint `/api/usuarios`.
+-  **Base de datos H2** en memoria, que guarda los datos enviados.
 
-## 🔎 Validación de funcionamiento
+##  Validación de funcionamiento
 
-- ✅ **Desde el cliente** → vía formulario Angular.
-- ✅ **Desde el servidor** → validando respuesta 200 (éxito).
-- ✅ **Desde la base de datos** → consultando la tabla `usuario` en la consola de H2 (`/h2-console`).
+-  **Desde el cliente** → vía formulario Angular.
+-  **Desde el servidor** → validando respuesta 200 (éxito).
+-  **Desde la base de datos** → consultando la tabla `usuario` en la consola de H2 (`/h2-console`).
 
 ---
 
-## 📄 INFORME TÉCNICO DE HERRAMIENTAS UTILIZADAS
+##  INFORME TÉCNICO DE HERRAMIENTAS UTILIZADAS
 
-### 🔙 BACKEND (Spring Boot + Maven)
+###  BACKEND (Spring Boot + Maven)
 
 - **Lenguaje:** Java  
 - **Framework:** Spring Boot  
@@ -31,7 +31,7 @@ El sistema cuenta con una arquitectura separada en capas:
 
 ---
 
-### 🎨 FRONTEND (Angular Standalone)
+###  FRONTEND (Angular Standalone)
 
 - **Lenguaje:** TypeScript  
 - **Framework:** Angular 17  
@@ -45,7 +45,7 @@ El sistema cuenta con una arquitectura separada en capas:
 
 ---
 
-### 🧪 PRUEBAS IMPLEMENTADAS
+###  PRUEBAS IMPLEMENTADAS
 
 - ✅ Envío y respuesta del formulario (`POST`)  
 - ✅ Lectura de la lista de usuarios (`GET`)  
@@ -53,7 +53,7 @@ El sistema cuenta con una arquitectura separada en capas:
 
 ---
 
-### 🗄️ BASE DE DATOS
+### 🗄 BASE DE DATOS
 
 - **Motor:** H2 Database (modo `mem:formulario`)  
 - **Conexión:** vía JDBC  
@@ -62,7 +62,7 @@ El sistema cuenta con una arquitectura separada en capas:
 
 ---
 
-### 🌐 SERVIDOR Y ENTORNOS
+###  SERVIDOR Y ENTORNOS
 
 - **Servidor embebido:** Apache Tomcat (via Spring Boot)  
 - **Cliente de pruebas HTTP:** Postman  
